@@ -7,4 +7,3 @@ set_period = "1d"
 covid_start = "2020-03-16"
 # Date US vaccine first widely available and markets are open
 covid_end = "2022-08-16"
-
