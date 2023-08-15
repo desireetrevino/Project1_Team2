@@ -11,7 +11,7 @@ symbols["telecom"] = "DTEGY VOD GTMEF TMUS T VZ"
 symbols["transportation"] = "AAL JBLU UNP JBHT MOTO"
 symbols["foodbev"] = "bmboy bud ko gis adm"
 symbols["healthcare"] = "unh sny pfe mrna wba pfe"
-symbols["banking"] = ""
+symbols["banking"] = "WFC HSBC SAN JPM C"
 
 # Create filler df
 stocks_hist = pd.DataFrame({"Stock": []})
