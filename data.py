@@ -2,19 +2,15 @@ import pandas as pd
 import yfinance as yf
 import dates
 
+## Stocks
+
 # symbols
 symbols = {}
-# hospitality
 symbols["hospitality"] = "HST HLT MAR CHH H"
-# telecom
 symbols["telecom"] = "DTEGY VOD GTMEF TMUS T VZ"
-# transportation
 symbols["transportation"] = "AAL JBLU UNP JBHT MOTO"
-# f&b
 symbols["foodbev"] = "bmboy bud ko gis adm"
-
 symbols["healthcare"] = "unh sny pfe mrna wba pfe"
-
 symbols["banking"] = ""
 
 # Create filler df
@@ -40,9 +36,33 @@ for key, value in symbols.items():
 print(stocks_hist.head())
 
 # Export Stock Data to CSV
-#stocks_hist.to_csv('data/stocks.csv', index=False)
+stocks_hist.to_csv('data/stocks.csv', index=False)
 
 
 ## ETFs
 
+# symbols
 etf_tickers = "FTXN FTXH FTXO FTXG FTXL FTXR"
+
+# Create filler df
+etf_hist = pd.DataFrame({"ETF": []})
+
+# call Yahoo Finance
+etfs = yf.Tickers(etf_tickers)
+
+# loop etfs
+for ticker in etfs.tickers:
+    df = etfs.tickers[ticker].history(start=dates.set_start,
+                                        end=dates.set_end,
+                                        period=dates.set_period)
+    df["ETF"] = ticker
+    df = df.reset_index()
+
+    etf_hist = pd.merge(etf_hist,
+                        df,
+                        how='outer')
+
+print(etf_hist.head())
+    
+# Export ETF Data to CSV
+etf_hist.to_csv('data/etf.csv', index=False)
