@@ -10,7 +10,7 @@ symbols["hospitality"] = "HST HLT MAR CHH H"
 symbols["telecom"] = "DTEGY VOD GTMEF TMUS T VZ"
 symbols["transportation"] = "AAL JBLU UNP JBHT MOTO"
 symbols["foodbev"] = "bmboy bud ko gis adm"
-symbols["healthcare"] = "unh sny pfe mrna wba pfe"
+symbols["healthcare"] = "unh sny pfe mrna wba"
 symbols["banking"] = "WFC HSBC SAN JPM C"
 
 # Create filler df
