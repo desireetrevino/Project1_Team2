@@ -25,12 +25,14 @@ Banking:
 * SAN - Banco Santander S.A.
 * JPM - JPMorgan Chase & Co.
 * C - Citigroup Inc.
+  
 Hospitality:
 * HST - Host Hotels & Resorts Inc.
 * HLT - Hilton Worldwide Holdings Inc.
 * MAR - Marriot International Inc.
 * CHH - Choice Hotels International Inc.
 * H - Hyatt Hotels Corporation
+  
 Telecom:
 * DTEGY - Deutsche Telekom AG
 * VOD - Vodafone Group Public Limited Company
@@ -38,18 +40,21 @@ Telecom:
 * TMUS - T-Mobile US, Inc.
 * T - AT&T Inc.
 * VZ - Verizon Communications Inc.
+  
 Transportation:
 * AAL - American Airlines Group Inc.
 * JBLU - JetBlue Airways Corporation
 * UNP - Union Pacific Corporation
 * JBHT - J.B. Hunt Transport Services Inc.
 * MOTO - SmartETFs Smart Transportation & Technology ETF
+  
 Food and Beverage:
 * BMBOY - Grupo Bimbo, S.A.B. de C.V.
 * BUD - Anheuser-Busch InVeb SA/NB
 * KO - The Coca-Cola Company
 * GIS - General Mills, Inc.
 * ADM - Archer-Daniels-Midland Company
+  
 Healthcare:
 * UNH - UnitedHealth Group Incorporated
 * SNY - Sanofi
